@@ -13,7 +13,7 @@ const Sidebar = () =>{
 
     
     return (
-      <div className="flex flex-col justify-between overflow-auto bg-sidebar text-heading-text border-r border-white ">
+      <div className="flex flex-col justify-between overflow-auto bg-sidebar text-heading-text">
       <nav className="top-0 px-4">
         <ul className="py-4 flex flex-col ">
           <div className="border-b border-white">
@@ -47,9 +47,9 @@ const Sidebar = () =>{
           </li>
           {display0 ? (
               <li className="flex flex-col content-start px-5 text-sm font-medium text-white ">
-              <div className="pb-4"><Link href="/introtoVR/#section0">What is VR?</Link></div>
-              <div className="pb-4"><Link href="/introtoVR/#section1">VR vs AR vs XR</Link></div>
-              <div className="pb-4"><Link href="/introtoVR/#section2">Aspects in VR</Link></div>
+              <div className="pb-4"><Link href="/introtoVR/#1">What is VR?</Link></div>
+              <div className="pb-4"><Link href="/introtoVR/#2">VR vs AR vs XR</Link></div>
+              <div className="pb-4"><Link href="/introtoVR/#3">Aspects in VR</Link></div>
   
             </li>
           ):(

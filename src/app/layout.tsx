@@ -17,25 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-      <div className="grid md:grid-cols-sidebar">
-          <Sidebar />
-          <div className="grid grid-rows-header">
-            <div>
-             <Navbar />
-            </div>
-            
-            <div>
-            {children}
-            </div>
-            
-            <div>
-              <p>footer
-                </p> 
-            </div>
-          </div>
-
-          
+      <div>
+        <Navbar />
+        <div className="grid grid-cols-4 bg-sidebar">
+          <div className='col-span-1 border-r border-white'><Sidebar /></div>
+          <div className='col-span-3'>{children}</div>
         </div>
+        <div>footer</div>  
+      </div>
       </body>
     </html>
   )

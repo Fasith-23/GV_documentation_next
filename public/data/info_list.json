@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "title":"Intro to Virtual Reality",
+        "section":
+        [ 
+            {
+                "sectionid":1,
+                "sectiontitle":"What is Virtual Reality?",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":2,
+                "sectiontitle":"VR vs AR vs XR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":3,
+                "sectiontitle":"Aspects in VR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+    
+    
+        ]
+    },
+    {
+        "id":2,
+        "title":"Tracking in Virtual Reality",
+        "section":
+        [ 
+            {
+                "sectionid":1,
+                "sectiontitle":"What is Virtual Reality?",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":2,
+                "sectiontitle":"VR vs AR vs XR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":3,
+                "sectiontitle":"Aspects in VR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+    
+    
+        ]
+    },
+    {
+        "id":3,
+        "title":"SLAM",
+        "section":
+        [ 
+            {
+                "sectionid":1,
+                "sectiontitle":"What is Virtual Reality?",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":2,
+                "sectiontitle":"VR vs AR vs XR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            },
+            {
+                "sectionid":3,
+                "sectiontitle":"Aspects in VR",
+                "sectioncontent":"is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. ISSuper Imposing digital elements onto real world (blending of the 2 worlds Ex: Pokemon go, Snapchat filters, room decor etche content can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfactory registration (i.e., accurate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMuper Imposing digital elements onto real world (blending of the 2 worlds).nt can span multiple sensory modalities, including visual, auditory, haptic, somatosensory and olfacrate pose registration/localization) is the key fundamental technique for achieving immersive AR effects.ome 3D registration (basically tracking) techniques - ARToolkit (uses markers which limits its ability) and SLAMn publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            }
+    
+    
+        ]
+    },
+
+]
