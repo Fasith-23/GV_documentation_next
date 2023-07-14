@@ -22,13 +22,11 @@ export default function RootLayout({
     <StateContext.Provider value={{ displayedItemId, setDisplayedItemId }}>
     <html lang="en">
       <body suppressHydrationWarning={true}>
-      <div>
+      <div className='bg-[radial-gradient(circle_at_bottom_right,_var(--tw-gradient-stops))] from-secondary via-[#154D61] to-primary to-60% '>
         <Navbar />
-        <div className="grid grid-cols-4 bg-primary">
-          <div className='col-span-1 border-r border-secondary'><Sidebar /></div>
-          <div className='col-span-3'>{children}</div>
-        </div>
-        <div>footer</div>  
+        <div>
+          {children}
+        </div> 
       </div>
       </body>
     </html>
