@@ -2,149 +2,54 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import dropdown from "../../../public/assets/icons/arrow-dropdown.png";
 import pullup from "../../../public/assets/icons/arrow-pullup.png";
+import info_list from "@/../public/data/info_list.json";
+import drop_list from "@/../public/data/info_list.json";
+import { StateContext, StateContextProps } from './displayedItem';
+
+
 
 const Sidebar = () =>{
-    const [display0, changedisplay0]= useState(false);
-    const [display1, changedisplay1]= useState(false);
-    const [display2, changedisplay2]= useState(false);
-
-    
+    const { displayedItemId, setDisplayedItemId }: StateContextProps = useContext(StateContext);
+    const [isActive, setIsActive] = useState(false);
+    const toggleDisplay = (itemId: number) => {
+      setDisplayedItemId(itemId);
+      setIsActive(true);
+    };   
     return (
-      <div className="flex flex-col justify-between overflow-auto bg-sidebar text-heading-text">
+      <div className="flex flex-col justify-between overflow-auto bg-primary text-heading-text">
       <nav className="top-0 px-4">
         <ul className="py-4 flex flex-col ">
-          <div className="border-b border-white">
-          <li className="px-2 flex justify-between py-4  text-sm font-bold">
-            <Link href="/introtoVR">Introduction to VR</Link>
-            {!display0 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display0)
-               changedisplay0(!display0)
- 
-             }}>
-             <Image src={dropdown} alt="dropdown" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-          {display0 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display0)
-               changedisplay0(!display0)
- 
-             }}>
-             <Image src={pullup} alt="pullup" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-            
-          </li>
-          {display0 ? (
-              <li className="flex flex-col content-start px-5 text-sm font-medium text-white ">
-              <div className="pb-4"><Link href="/introtoVR/#1">What is VR?</Link></div>
-              <div className="pb-4"><Link href="/introtoVR/#2">VR vs AR vs XR</Link></div>
-              <div className="pb-4"><Link href="/introtoVR/#3">Aspects in VR</Link></div>
-  
-            </li>
-          ):(
-            <></>
-          )}
+        {info_list.map((item:any) => (
+          <div key={item.id} className="border-b border-secondary">
           
+              <li className="px-2 flex justify-between py-4  text-sm font-bold hover:text-secondary ">
+                <Link href="/main_page" className={`${isActive && displayedItemId === item.id ? 'border-l-4 pl-2 border-secondary' : ''}`} onClick={() => toggleDisplay(item.id)}>{item.title}</Link>
+                {displayedItemId === item.id ? (
+              <button className="items-right" onClick={() => toggleDisplay(item.id)}>
+                <Image src={pullup} alt="pullup" className="w-3 sm:w-3" />
+              </button>
+            ) : (
+              <button className="items-right" onClick={() => toggleDisplay(item.id)}>
+                <Image src={dropdown} alt="dropdown" className="w-3 sm:w-3" />
+              </button>
+            )}
+              </li>
+              {displayedItemId === item.id && (
+                  <li className="flex flex-col content-start px-5 text-sm font-medium text-white ">
+                    {item.section.map((section:any) => (
+                  <div key={section.sectionid} className="pb-4 hover:text-secondary"><Link href={`/main_page/#${item.id}_${section.sectionid}`} onClick={() => toggleDisplay(item.id)}>{section.sectiontitle}</Link></div>
+                    ))}
+              
+                  </li>
+              )}
 
+          
           </div>
+        ))}
           
-          <div className="border-b border-white">
-          <li className="px-2 flex justify-between py-4  text-sm font-bold">
-            <Link href="/trackinginVR">Tracking in VR</Link>
-            {!display1 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display1)
-               changedisplay1(!display1)
- 
-             }}>
-             <Image src={dropdown} alt="dropdown" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-          {display1 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display1)
-               changedisplay1(!display1)
- 
-             }}>
-             <Image src={pullup} alt="pullup" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-            
-          </li>
-          {display1 ? (
-              <li className="flex flex-col content-start px-5 text-sm font-medium text-white">
-              <div className="pb-4"><Link href="/trackinginVR/#section0">Pose Tracking</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section1">Types of Tracking</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section2">Optical Tracking</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section3">Tracking using SLAM</Link></div>
-            </li>
-          ):(
-            <></>
-          )}
-          
-
-          </div>
-
-          <div className="border-b border-white">
-          <li className="px-2 flex justify-between py-4  text-sm font-bold">
-            <Link href="/SLAM">SLAM</Link>
-            {!display2 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display2)
-               changedisplay2(!display2)
- 
-             }}>
-             <Image src={dropdown} alt="dropdown" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-          {display2 ? (
-             <button className="items-right" 
-             onClick={() => {
-               console.log(display2)
-               changedisplay2(!display2)
- 
-             }}>
-             <Image src={pullup} alt="pullup" className="w-3 sm:w-3"/>
-             </button>  
-          ):(
-            <></>
-          )}
-            
-          </li>
-          {display2 ? (
-              <li className="flex flex-col content-start px-5 text-sm font-medium text-white">
-              <div className="pb-4"><Link href="/trackinginVR/#section0">Intro to SLAM</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section1">Math behind SLAM</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section2">SLAM algorithms and types</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section3">Aspects in SLAM</Link></div>
-              <div className="pb-4"><Link href="/trackinginVR/#section4">Problems of SLAM in VY</Link></div>
-            </li>
-          ):(
-            <></>
-          )}
-          
-
-          </div>
         </ul>
       </nav>
     </div>
