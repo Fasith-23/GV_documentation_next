@@ -1,8 +1,11 @@
-import './globals.css'
+"use client";
+import './globals.css';
+import { useState } from 'react';
 import { Inter } from 'next/font/google'
 import Sidebar from "./components/sidebar";
 import Navbar from './components/navbar';
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
+import { StateContext } from "@/app/components/displayedItem";
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,29 +17,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [displayedItemId, setDisplayedItemId] = useState<number | null>(null);
   return (
+    <StateContext.Provider value={{ displayedItemId, setDisplayedItemId }}>
     <html lang="en">
       <body suppressHydrationWarning={true}>
-      <div className="grid md:grid-cols-sidebar">
-          <Sidebar />
-          <div className="grid grid-rows-header">
-            <div>
-             <Navbar />
-            </div>
-            
-            <div>
-            {children}
-            </div>
-            
-            <div>
-              <p>footer
-                </p> 
-            </div>
-          </div>
-
-          
+      <div>
+        <Navbar />
+        <div className="grid grid-cols-4 bg-primary">
+          <div className='col-span-1 border-r border-secondary'><Sidebar /></div>
+          <div className='col-span-3'>{children}</div>
         </div>
+        <div>footer</div>  
+      </div>
       </body>
     </html>
+    </StateContext.Provider>
   )
 }

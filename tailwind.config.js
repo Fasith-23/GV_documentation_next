@@ -15,8 +15,8 @@ module.exports = {
       },
       colors: {
         'black-pearl': '#191D20',
-        'sidebar': '#1F2327',
-        'heading-text':'#B3CAE4',
+        'primary': '#040322',
+        'secondary':'#6667AB',
       },
       fontFamily: {
         'sans': ['Open Sans', ...defaultTheme.fontFamily.sans],
