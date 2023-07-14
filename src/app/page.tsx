@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div className='grid sm:grid-cols-2 '>
-      <div className=' mt-24 sm:mb-32 pl-32 text-left  sm:cols-span-1'>
+      <div className=' mt-24 sm:mb-40 pl-32 text-left  sm:cols-span-1'>
         <h1 className='text-8xl font-bold text-white'>Virtual Reality</h1>
         <p className='text-xl font-bold text-secondary my-8'>Time to Make the Unreal Real</p>
         <button onClick={() => initialDisplay(1)}> 
