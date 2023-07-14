@@ -6,6 +6,7 @@ import leftarrow from "../../../public/assets/icons/arrow-left.png";
 import rightarrow from "../../../public/assets/icons/arrow-right.png";
 import info_list from "@/../public/data/info_list.json";
 import { StateContext } from "@/app/components/displayedItem";
+import Sidebar from "../components/sidebar";
 
 export default function MainPage() {
     const {displayedItemId, setDisplayedItemId} = useContext(StateContext);
@@ -16,7 +17,9 @@ export default function MainPage() {
       setDisplayedItemId(itemId+1);
     };
     return (
-      <div className="bg-primary p-5 ">
+      <div className="grid grid-cols-4 ">
+        <div className='col-span-1 border-r border-secondary'><Sidebar /></div>
+        <div className="bg-primary p-5 col-span-3 ">
         <div className="border rounded-md border-secondary p-5 ">
             {info_list.map((item:any) => (
                 
@@ -51,6 +54,8 @@ export default function MainPage() {
             ))}        
         </div>
       </div>
+      </div>
+      
      
     )
   }

@@ -19,7 +19,7 @@ const Sidebar = () =>{
       setIsActive(true);
     };   
     return (
-      <div className="flex flex-col justify-between overflow-auto bg-primary text-heading-text">
+      <div className="flex flex-col justify-between overflow-auto h-full bg-primary text-heading-text">
       <nav className="top-0 px-4">
         <ul className="py-4 flex flex-col ">
         {info_list.map((item:any) => (
